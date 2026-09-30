@@ -1,0 +1,6 @@
+{
+  "name": "AdVantage AI — Growth & Loyalty Command Center",
+  "description": "AI-powered customer loyalty, review automation, and multi-channel marketing growth platform for local service businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

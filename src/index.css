@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-secondary-fixed-dim: #bec6e0;
+  --color-on-primary-container: #ede0ff;
+  --color-background: #f8f9ff;
+  --color-on-tertiary-container: #76ffc2;
+  --color-on-error-container: #93000a;
+  --color-inverse-primary: #d2bbff;
+  --color-on-secondary-fixed-variant: #3f465c;
+  --color-on-primary-fixed-variant: #5a00c6;
+  --color-surface: #f8f9ff;
+  --color-surface-container-low: #eff4ff;
+  --color-on-surface-variant: #4a4455;
+  --color-surface-container-highest: #d3e4fe;
+  --color-outline-variant: #ccc3d8;
+  --color-inverse-on-surface: #eaf1ff;
+  --color-secondary-container: #dae2fd;
+  --color-surface-container-high: #dce9ff;
+  --color-primary-container: #7c3aed;
+  --color-tertiary: #005b3d;
+  --color-secondary-fixed: #dae2fd;
+  --color-outline: #7b7487;
+  --color-on-error: #ffffff;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-on-tertiary-fixed: #002113;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-tertiary: #ffffff;
+  --color-inverse-surface: #213145;
+  --color-primary-fixed-dim: #d2bbff;
+  --color-on-secondary: #ffffff;
+  --color-surface-bright: #f8f9ff;
+  --color-secondary: #565e74;
+  --color-on-background: #0b1c30;
+  --color-surface-container: #e5eeff;
+  --color-on-secondary-fixed: #131b2e;
+  --color-error: #ba1a1a;
+  --color-surface-variant: #d3e4fe;
+  --color-tertiary-container: #007650;
+  --color-surface-tint: #732ee4;
+  --color-on-secondary-container: #5c647a;
+  --color-on-primary-fixed: #25005a;
+  --color-on-surface: #0b1c30;
+  --color-primary-fixed: #eaddff;
+  --color-error-container: #ffdad6;
+  --color-primary: #630ed4;
+  --color-surface-dim: #cbdbf5;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-on-primary: #ffffff;
+
+  --text-display-lg: 40px;
+  --text-display-lg--line-height: 48px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-headline-lg: 30px;
+  --text-headline-lg--line-height: 38px;
+  --text-headline-lg--letter-spacing: -0.02em;
+  --text-headline-lg--font-weight: 700;
+
+  --text-headline-lg-mobile: 24px;
+  --text-headline-lg-mobile--line-height: 32px;
+  --text-headline-lg-mobile--letter-spacing: -0.015em;
+  --text-headline-lg-mobile--font-weight: 700;
+
+  --text-headline-md: 22px;
+  --text-headline-md--line-height: 30px;
+  --text-headline-md--letter-spacing: -0.01em;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-sm: 18px;
+  --text-headline-sm--line-height: 26px;
+  --text-headline-sm--letter-spacing: -0.005em;
+  --text-headline-sm--font-weight: 600;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 20px;
+  --text-body-md--font-weight: 400;
+
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 18px;
+  --text-body-sm--font-weight: 400;
+
+  --text-label-lg: 14px;
+  --text-label-lg--line-height: 20px;
+  --text-label-lg--font-weight: 600;
+
+  --text-label-md: 12px;
+  --text-label-md--line-height: 16px;
+  --text-label-md--font-weight: 500;
+
+  --text-label-sm: 11px;
+  --text-label-sm--line-height: 14px;
+  --text-label-sm--letter-spacing: 0.04em;
+  --text-label-sm--font-weight: 600;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+.font-display-lg,
+.font-headline-lg,
+.font-headline-lg-mobile,
+.font-headline-md,
+.font-headline-sm,
+.font-body-lg,
+.font-body-md,
+.font-body-sm,
+.font-label-lg,
+.font-label-md,
+.font-label-sm {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+  user-select: none;
+}
+
+.material-symbols-outlined.fill-1 {
+  font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(123, 116, 135, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(123, 116, 135, 0.45);
+}
+
